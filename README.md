@@ -1,155 +1,358 @@
-# prueba
-PROPUESTAS DE PROYECTOS ESCOLARES ARDUINO
-Fichas Técnicas para Documentos de Google
+# 🤖 Proyectos Arduino — Soluciones Tecnológicas Escolares
 
-Propuesta N.º 1: Alerta Sísmica Arduino
-N.º de propuesta
-1
-Nombre del proyecto
-Alerta Sísmica Arduino
-Problema o necesidad
-Mejorar la seguridad dentro del liceo mediante un sistema que detecte vibraciones fuertes y genere una alerta sonora y visual.
-Aplicación
-Podría utilizarse en salas de clases, laboratorios, talleres u otras dependencias del liceo para realizar una demostración educativa de detección de vibraciones.
-Funcionamiento
-El sensor de vibración detecta movimientos. Arduino Uno recibe la señal y, cuando detecta una vibración, activa el buzzer y el LED rojo. Cuando no hay vibración, mantiene encendido el LED verde y la alarma permanece apagada.
-Arduino
-Arduino Uno
-Sensores
-Sensor de vibración SW-420
-Actuadores
-Buzzer, LED rojo y LED verde
-Otros componentes
-Resistencias de 220 Ω, protoboard y cables jumper.
-Materiales
-Arduino Uno, sensor SW-420, buzzer, 1 LED rojo, 1 LED verde, resistencias de 220 Ω, protoboard y cables jumper.
-Programación
-El programa debe leer constantemente el sensor. Si detecta una vibración, debe apagar el LED verde, encender el LED rojo y activar el buzzer. Si no detecta vibración, debe mantener el LED verde encendido y la alarma apagada.
-Viabilidad
-Sí, es altamente viable. Es un proyecto de bajo costo y fácil implementación para el entorno escolar. Desglose estimado de componentes en pesos chilenos (CLP):
-• Arduino Uno Rev3 (Compatible): $5.000 - $7.000 CLP
-• Sensor de vibración SW-420: $1.200 - $1.800 CLP
-• Buzzer pasivo/activo: $500 - $800 CLP
-• LEDs (Rojo y Verde) + Resistencias 220Ω: $500 CLP
-• Protoboard 400 puntos + Cables Jumper: $2.500 CLP
-Costo total aproximado: $9.700 - $12.600 CLP. Accesible para presupuesto escolar o trabajo en equipo.
-Integrantes
-[Nombres de los integrantes del equipo]
+Repositorio que reúne una serie de **proyectos escolares desarrollados con Arduino**, orientados a resolver problemas reales dentro de un establecimiento educacional mediante automatización, sensores y sistemas de alerta.
 
+Los proyectos están pensados para ser desarrollados inicialmente como **prototipos y maquetas educativas**, utilizando componentes de bajo costo y herramientas de simulación como **Tinkercad**.
 
-Propuesta N.º 2: Lavamanos Inteligente Automatizado con Arduino
-N.º de propuesta
-2
-Nombre del proyecto
-Lavamanos Inteligente Automatizado con Arduino
-Problema o necesidad
-Permitir el lavado de manos sin necesidad de tocar una llave, ayudando a mejorar la higiene y evitar el desperdicio de agua en el liceo.
-Aplicación
-Baños de estudiantes, profesores y zonas de alimentación del liceo.
-Funcionamiento
-Un sensor detecta cuando una persona acerca las manos. La información es enviada al Arduino, que procesa los datos y activa una bomba de agua mediante un relé. Cuando las manos se alejan, la bomba se apaga.
-Arduino
-Arduino Uno o Arduino Nano
-Sensores
-Sensor ultrasónico HC-SR04 (detecta presencia y distancia de las manos)
-Actuadores
-Mini bomba de agua (impulsa el agua). Indicador opcional con LED o Buzzer.
-Otros componentes
-Módulo relé de 1 canal, protoboard, cables Dupont y fuente de alimentación.
-Materiales
-Arduino Uno o Nano, sensor HC-SR04, módulo relé, mini bomba de agua, mangueras, recipiente para agua, cables, protoboard y materiales de maqueta (cartón, plástico o madera).
-Programación
-Se programa en Arduino IDE (C/C++). Mide la distancia con el sensor HC-SR04 y, si las manos están dentro del rango establecido, activa el relé para encender la bomba.
-Viabilidad
-El proyecto es totalmente viable para realizar como maqueta escolar. Utiliza componentes comerciales de muy bajo costo y fácil adquisición en tiendas de electrónica locales.
-Integrantes
-[Nombres de los integrantes del equipo]
+---
 
+## 📋 Proyectos
 
-Propuesta N.º 3: Cerradura Inteligente (Smart Lock)
-N.º de propuesta
-3
-Nombre del proyecto
-Cerradura Inteligente (Smart Lock)
-Problema o necesidad
-Seguridad de uso y cuidado de las pantallas, además de la pérdida/olvido constante de llaves físicas en salas compartidas del liceo, generando interrupciones.
-Aplicación
-Puertas de salas con pantallas, laboratorios de computación y casilleros de profesores.
-Funcionamiento
-El usuario ingresa una clave numérica a través de un teclado matricial. Si coincide, el servomotor retrae el pestillo por 5 segundos y enciende un LED verde. Si es incorrecto, suena una alarma con el buzzer y se enciende un LED rojo.
-Arduino
-Arduino UNO
-Sensores
-Teclado matricial 4x4 (interfaz táctil / entrada digital)
-Actuadores
-Servomotor (SG90) y Buzzer pasivo
-Otros componentes
-Pantalla LCD 16x2 (con módulo I2C), 1 LED verde, 1 LED rojo, 2 resistencias de 220 Ω y protoboard con cables jumper.
-Materiales
-Maqueta de puerta con cartón, fuente de alimentación (batería 9V o adaptador de 5V), cables y protoboard.
-Programación
-Lee teclas con Keypad.h, compara con claveCorrecta, controla el servomotor mediante Servo.h (0° cerrado, 90° abierto) y muestra mensajes ('Acceso Concedido' / 'Clave Incorrecta') en la pantalla LCD.
-Viabilidad
-Muy alta. Todos los componentes son de bajo costo, altamente accesibles en el mercado local y 100% compatibles en Tinkercad para simulación previa.
-Integrantes
-[Nombres de los integrantes del equipo]
+| # | Proyecto                  | Área                           |
+| - | ------------------------- | ------------------------------ |
+| 1 | 🚨 Alerta Sísmica Arduino | Seguridad                      |
+| 2 | 🚰 Lavamanos Inteligente  | Higiene y automatización       |
+| 3 | 🔐 Cerradura Inteligente  | Seguridad y acceso             |
+| 4 | 🔥 Detector de Humo       | Seguridad y prevención         |
+| 5 | 🌱 EcoRiego               | Medioambiente y automatización |
 
+---
 
-Propuesta N.º 4: Sistema de Detección Temprana de Humo y Alerta Escolar
-N.º de propuesta
-4
-Nombre del proyecto
-Sistema de Detección Temprana de Humo y Alerta Escolar
-Problema o necesidad
-Riesgo de incendios o amagos de fuego en zonas con material inflamable o de difícil supervisión constante en el liceo.
-Aplicación
-Laboratorios de computación, bodegas de almacenamiento, salas de clases y baños.
-Funcionamiento
-El sensor monitorea constantemente la concentración de humo/gases. Si supera un umbral seguro, activa un buzzer y un LED rojo intermitente, desplegando una advertencia de peligro en la pantalla LCD.
-Arduino
-Arduino UNO (o Arduino Nano)
-Sensores
-Sensor de humo y gas MQ-2
-Actuadores
-Buzzer pasivo/activo (alarma sonora) y LED rojo (indicador visual)
-Otros componentes
-Pantalla LCD 16x2 (con I2C), LED verde, resistencias de 220 Ω, potenciómetro 10k Ω (opcional) y protoboard.
-Materiales
-Cables jumper, caja protectora (impresa o cortada), cable USB o batería de 9V con conector jack.
-Programación
-Lee el valor analógico del sensor MQ-2. Si supera el límite fijado (if), activa la frecuencia del buzzer, enciende el LED rojo y escribe 'ALERTA HUMO' en el LCD. En estado normal mantiene LED verde activo.
-Viabilidad
-Altamente viable. Componentes económicos, ampliamente disponibles en el comercio local y compatibles con la plataforma de simulación Tinkercad.
-Integrantes
-[Nombres de los integrantes del equipo]
+# 🚨 1. Alerta Sísmica Arduino
 
+Sistema diseñado para detectar **vibraciones fuertes** y generar una alerta sonora y visual.
 
-Propuesta N.º 5: (EcoRiego) Sistema de Riego Automatizado e Inteligente
-N.º de propuesta
-5
-Nombre del proyecto
-(EcoRiego) Sistema de Riego Automatizado e Inteligente
-Problema o necesidad
-Áreas verdes o jardines del liceo sufren por falta de riego constante, desperdicio de agua por riego manual ineficiente o descuido durante períodos de vacaciones.
-Aplicación
-Áreas verdes principales, jardineras del patio central y huertos escolares.
-Funcionamiento
-Mide constantemente la humedad de la tierra. Si el suelo está seco, activa una bomba de agua mediante un relé durante un tiempo determinado y muestra datos en el LCD. Si está húmedo, permanece en reposo.
-Arduino
-Arduino Uno R3
-Sensores
-Sensor de humedad de suelo (capacitivo o resistivo FC-28)
-Actuadores
-Mini bomba de agua sumergible (5V-12V) y Buzzer activo (alerta de tanque vacío)
-Otros componentes
-Módulo Relé de 1 canal (5V), pantalla LCD 16x2 con I2C, resistencias de 220Ω, protoboard y cables jumper (M-M, M-H).
-Materiales
-Manguera de silicona fina, depósito de agua (contenedor plástico), estructura o base protectora y tierra/plantas para pruebas.
-Programación
-Lee el valor analógico del sensor de humedad. Evalúa si está bajo el umbral crítico para enviar señal HIGH al relé, activar la bomba y actualizar la pantalla LCD con el estado actual.
-Viabilidad
-Totalmente viable. Componentes muy económicos, fáciles de conseguir y estándar en kits educativos de Arduino.
-Integrantes
-[Nombres de los integrantes del equipo]
+### 🎯 Objetivo
 
+Mejorar la seguridad dentro del establecimiento mediante un sistema capaz de detectar vibraciones y alertar a los usuarios.
 
+### ⚙️ Funcionamiento
+
+El sensor **SW-420** detecta vibraciones y envía la señal al Arduino Uno.
+
+Cuando se detecta una vibración:
+
+* 🔴 Se enciende el LED rojo.
+* 🟢 Se apaga el LED verde.
+* 🔊 Se activa el buzzer.
+
+Cuando no existe vibración:
+
+* 🟢 El LED verde permanece encendido.
+* 🔴 El LED rojo permanece apagado.
+* 🔇 El buzzer permanece desactivado.
+
+### 🔧 Componentes
+
+* Arduino Uno
+* Sensor de vibración SW-420
+* Buzzer
+* LED rojo
+* LED verde
+* Resistencias de 220 Ω
+* Protoboard
+* Cables jumper
+
+### 💻 Programación
+
+El programa monitorea constantemente el sensor y cambia el estado de los LEDs y del buzzer dependiendo de la presencia de vibraciones.
+
+### 💰 Costo estimado
+
+**$9.700 – $12.600 CLP**
+
+---
+
+# 🚰 2. Lavamanos Inteligente Automatizado
+
+Sistema de lavado de manos automático que permite activar el suministro de agua **sin tocar una llave**.
+
+### 🎯 Objetivo
+
+Mejorar la higiene y reducir el desperdicio de agua mediante automatización.
+
+### ⚙️ Funcionamiento
+
+Un sensor ultrasónico **HC-SR04** detecta la presencia de las manos.
+
+Cuando las manos se encuentran dentro del rango configurado:
+
+1. Arduino procesa la información.
+2. Se activa el módulo relé.
+3. El relé enciende la bomba.
+4. La bomba suministra agua.
+
+Cuando las manos se alejan, la bomba se apaga.
+
+### 🔧 Componentes
+
+* Arduino Uno o Nano
+* Sensor ultrasónico HC-SR04
+* Módulo relé de 1 canal
+* Mini bomba de agua
+* Manguera
+* Recipiente para agua
+* Protoboard
+* Cables Dupont
+* Fuente de alimentación
+
+### 💻 Programación
+
+Desarrollado mediante **Arduino IDE utilizando C/C++**.
+
+El programa mide continuamente la distancia detectada por el HC-SR04 y controla la bomba según el rango configurado.
+
+---
+
+# 🔐 3. Cerradura Inteligente — Smart Lock
+
+Sistema de control de acceso mediante **clave numérica**, servomotor y pantalla LCD.
+
+### 🎯 Objetivo
+
+Mejorar la seguridad de salas, laboratorios y espacios donde se almacenan equipos tecnológicos.
+
+### ⚙️ Funcionamiento
+
+El usuario introduce una clave mediante un **teclado matricial 4x4**.
+
+Si la clave es correcta:
+
+* ✅ Se muestra "Acceso Concedido".
+* 🟢 Se enciende el LED verde.
+* 🔓 El servomotor abre el mecanismo.
+* ⏱️ La cerradura permanece abierta durante 5 segundos.
+
+Si la clave es incorrecta:
+
+* ❌ Se muestra "Clave Incorrecta".
+* 🔴 Se enciende el LED rojo.
+* 🔊 Se activa el buzzer.
+
+### 🔧 Componentes
+
+* Arduino Uno
+* Teclado matricial 4x4
+* Servomotor SG90
+* Buzzer pasivo
+* Pantalla LCD 16x2
+* Módulo I2C
+* LED verde
+* LED rojo
+* Resistencias de 220 Ω
+* Protoboard
+* Cables jumper
+
+### 📚 Librerías
+
+```cpp
+#include <Keypad.h>
+#include <Servo.h>
+```
+
+### 🧪 Simulación
+
+El proyecto puede ser desarrollado y probado previamente mediante **Tinkercad**, antes de construir el prototipo físico.
+
+---
+
+# 🔥 4. Sistema de Detección Temprana de Humo
+
+Sistema de monitoreo diseñado para detectar la presencia de humo o gases y generar una alerta.
+
+### 🎯 Objetivo
+
+Implementar un sistema educativo de prevención ante posibles situaciones de humo o amago de incendio.
+
+### ⚙️ Funcionamiento
+
+El sensor **MQ-2** monitorea constantemente la concentración de humo/gases.
+
+Cuando el valor supera el umbral configurado:
+
+* 🔴 Se activa el LED rojo.
+* 🔊 Se activa el buzzer.
+* 📺 La pantalla LCD muestra una advertencia.
+* ⚠️ Se indica el estado de alerta.
+
+En condiciones normales:
+
+* 🟢 El LED verde permanece activo.
+* 🔇 La alarma permanece apagada.
+
+### 🔧 Componentes
+
+* Arduino Uno o Nano
+* Sensor MQ-2
+* Buzzer
+* LED rojo
+* LED verde
+* Pantalla LCD 16x2
+* Módulo I2C
+* Resistencias de 220 Ω
+* Protoboard
+* Cables jumper
+
+### 💻 Lógica principal
+
+```text
+Leer sensor MQ-2
+       ↓
+¿Supera el umbral?
+    ↙       ↘
+  SÍ         NO
+  ↓           ↓
+Alarma      Estado
+LED rojo    normal
+LCD         LED verde
+Buzzer
+```
+
+---
+
+# 🌱 5. EcoRiego — Sistema de Riego Automatizado
+
+Sistema de riego automático capaz de determinar cuándo una planta necesita agua.
+
+### 🎯 Objetivo
+
+Reducir el desperdicio de agua y automatizar el riego de áreas verdes, jardines o huertos escolares.
+
+### ⚙️ Funcionamiento
+
+El sensor de humedad mide constantemente las condiciones del suelo.
+
+Cuando la humedad se encuentra por debajo del umbral establecido:
+
+1. Arduino detecta que el suelo está seco.
+2. Activa el módulo relé.
+3. El relé enciende la bomba.
+4. La bomba suministra agua.
+5. La pantalla LCD muestra el estado del sistema.
+
+Cuando el suelo presenta suficiente humedad, el sistema permanece en reposo.
+
+### 🔧 Componentes
+
+* Arduino Uno R3
+* Sensor de humedad de suelo
+* Módulo relé de 1 canal
+* Mini bomba de agua
+* Buzzer
+* Pantalla LCD 16x2
+* Módulo I2C
+* Resistencias de 220 Ω
+* Protoboard
+* Cables jumper
+* Manguera de silicona
+* Depósito de agua
+* Tierra y plantas para pruebas
+
+### 💻 Lógica principal
+
+```text
+Leer humedad del suelo
+        ↓
+¿Suelo seco?
+    ↙          ↘
+  SÍ            NO
+  ↓              ↓
+Activar        Mantener
+bomba          reposo
+  ↓
+Actualizar LCD
+```
+
+---
+
+# 🛠️ Tecnologías utilizadas
+
+* **Arduino UNO / Nano**
+* **Arduino IDE**
+* **C/C++**
+* **Tinkercad Circuits**
+* Sensores digitales y analógicos
+* Actuadores
+* Relés
+* Servomotores
+* Pantallas LCD
+* Electrónica básica
+
+---
+
+# 🎓 Enfoque educativo
+
+Estos proyectos están diseñados para desarrollar competencias relacionadas con:
+
+* Programación de microcontroladores.
+* Electrónica básica.
+* Lectura de sensores.
+* Control de actuadores.
+* Automatización.
+* Resolución de problemas reales.
+* Diseño y construcción de prototipos.
+* Trabajo colaborativo.
+* Pensamiento lógico y algorítmico.
+
+---
+
+# 📁 Estructura recomendada del repositorio
+
+```text
+arduino-proyectos/
+│
+├── README.md
+│
+├── 01-alerta-sismica/
+│   ├── alerta-sismica.ino
+│   ├── README.md
+│   └── img/
+│
+├── 02-lavamanos-inteligente/
+│   ├── lavamanos-inteligente.ino
+│   ├── README.md
+│   └── img/
+│
+├── 03-cerradura-inteligente/
+│   ├── cerradura-inteligente.ino
+│   ├── README.md
+│   └── img/
+│
+├── 04-detector-humo/
+│   ├── detector-humo.ino
+│   ├── README.md
+│   └── img/
+│
+└── 05-ecoriego/
+    ├── ecoriego.ino
+    ├── README.md
+    └── img/
+```
+
+---
+
+# 👨‍🎓 Integrantes
+
+Los integrantes de cada proyecto serán definidos por los respectivos equipos de trabajo.
+
+| Proyecto              | Integrantes |
+| --------------------- | ----------- |
+| Alerta Sísmica        | Por definir |
+| Lavamanos Inteligente | Por definir |
+| Cerradura Inteligente | Por definir |
+| Detector de Humo      | Por definir |
+| EcoRiego              | Por definir |
+
+---
+
+# ⚠️ Aviso
+
+Estos proyectos tienen un **propósito educativo y de prototipado**. Los sistemas de detección de humo, seguridad y alerta sísmica no deben considerarse reemplazos de sistemas profesionales certificados.
+
+---
+
+# 📄 Licencia
+
+Proyecto desarrollado con fines **educativos y académicos**.
+
+Puedes adaptar, modificar y mejorar los proyectos para actividades de aprendizaje, prototipado y experimentación con Arduino.
